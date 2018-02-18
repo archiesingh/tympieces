@@ -17,15 +17,17 @@ public class categoryDAOImpl implements categoryDAO{
 		this.factory=factory;
 	}
 	@Transactional
-	public void saveOrUpdatecategory(category cat) {
+	public boolean saveOrUpdatecategory(category cat) {
 		Session session=factory.getCurrentSession();
 		session.saveOrUpdate(cat);
+		return true;
 	}
 	@Override
 	@Transactional
-	public void deletecategory(category cat) {
+	public boolean deletecategory(category cat) {
 		Session session=factory.getCurrentSession();
 		session.delete(cat);
+		return true;
 	}
 	@Override
 	public category getcategory(int id) {

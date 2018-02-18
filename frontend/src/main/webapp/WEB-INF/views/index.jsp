@@ -86,7 +86,8 @@
     
     <div class="col-md-4">
       <div class="thumbnail">
-        <!a href="${e}/resources/images/cchaps.PNG" target="_blank">
+       <c:if test='<%=session.getAttribute("loggedIn")!=null%>'>
+        <a href="${e}productlist/10" target="_blank"></c:if>
           <img src="${e}/resources/images/cchaps.PNG" alt="Lights" style="width:100%">
           <div class="caption">
                       </div>
@@ -95,7 +96,8 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-        <!a href="${e}/resources/images/fastrack.PNG" target="_blank">
+       <c:if test='<%=session.getAttribute("loggedIn")!=null%>'>
+        <a href="${e}productlist/5" target="_blank"></c:if>
           <img src="${e}/resources/images/fastrack.PNG" alt="Lights" style="width:100%">
           <div class="caption">
             
@@ -105,7 +107,8 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-      <!a href="${e}/resources/images/citizenn.PNG" target="_blank">
+       <c:if test='<%=session.getAttribute("loggedIn")!=null%>'>
+        <a href="${e}productlist/7" target="_blank"></c:if>
           <img src="${e}/resources/images/citizenn.PNG" alt="Lights" style="width:100%">
           <div class="caption">
             
@@ -115,7 +118,8 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-        <!a href="${e}/resources/images/fossil.PNG" target="_blank">
+       <c:if test='<%=session.getAttribute("loggedIn")!=null%>'>
+        <a href="${e}productlist/1" target="_blank"></c:if>
           <img src="${e}/resources/images/fossil.PNG" alt="Lights" style="width:100%">
           <div class="caption">
             
@@ -125,7 +129,8 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-        <!a href="${e}/resources/images/invicta.PNG" target="_blank">
+       <c:if test='<%=session.getAttribute("loggedIn")!=null%>'>
+        <a href="${e}productlist/8" target="_blank"></c:if>
           <img src="${e}/resources/images/invicta.PNG" alt="Lights" style="width:100%">
           <div class="caption">
             
@@ -135,7 +140,8 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-        <!a href="${e}/resources/images/timex.PNG" target="_blank">
+       <c:if test='<%=session.getAttribute("loggedIn")!=null%>'>
+        <a href="${e}productlist/6" target="_blank"></c:if>
           <img src="${e}/resources/images/timex.PNG" alt="Lights" style="width:100%">
           <div class="caption">
             
@@ -145,7 +151,8 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-        <!a href="${e}/resources/images/titan.PNG" target="_blank">
+       <c:if test='<%=session.getAttribute("loggedIn")!=null%>'>
+        <a href="${e}productlist/3" target="_blank"></c:if>
           <img src="${e}/resources/images/titan.PNG" alt="Lights" style="width:100%">
           <div class="caption">
             

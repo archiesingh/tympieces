@@ -4,17 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>BILLING & SHIPPING</title>
+
+<script src="${e}resources/javaScript/validationBilling.js"></script>
 <link href="${e}resources/css/try.css" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <%@include file="header.jsp" %>
 <div class="login-page">
   <div class="form">
-<form action="placeorder" method="post">
+<form action="placeorder" method="post" onsubmit="return validationShipping()">
 SHIPPING<br/>
  <input type="text" placeholder="name" name="s_name"/><br/>
  <input type="text" placeholder="mobile" name="s_mobile"/><br/>

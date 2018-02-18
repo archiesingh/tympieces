@@ -18,8 +18,11 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="${e}">TYMPIECES</a>
-    </div>
+    <a  href="${e}">
+    <img src="${e}/resources/images/logoimage.jpeg" alt="Logoimage" >
+    </a>
+    <img src="${e}/resources/images/logo.PNG" alt="Logo" >
+     </div>
     <ul class="nav navbar-nav">
 <c:if test='<%=session.getAttribute("loggedIn")!=null%>'>
 <c:if test='<%=session.getAttribute("role").equals("admin")%>'>

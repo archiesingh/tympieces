@@ -51,6 +51,25 @@ public class cartcontroller {
 		cart_DAO.insertOrUpdateCart(cart_item);
 		return "redirect:/viewcart";
 	}
+	@RequestMapping("/buynow/{id}")
+	public String buynow(@PathVariable int id){
+		 Authentication authentication=SecurityContextHolder.getContext().getAuthentication();
+			String username=authentication.getName();
+			cart cart_item=cart_DAO.checkCartItem(username,id);
+			if(cart_item!=null){
+			cart_item.setQuant(cart_item.getQuant()+1);
+			cart_DAO.insertOrUpdateCart(cart_item);
+			return "redirect:/checkout";
+			}
+		product pro=proDAO.getproduct(id);
+		cart_item=new cart();
+		cart_item.setPro(pro);
+		cart_item.setQuant(1);
+		cart_item.setStatus("U");
+		cart_item.setUser(allUserDAO.getUserByUsername(username));
+		cart_DAO.insertOrUpdateCart(cart_item);
+		return "redirect:/checkout";
+	}
 	
 	@RequestMapping("/changequantity/{id}/{condition}")
 	public String changequantity(@PathVariable int id,@PathVariable int condition){

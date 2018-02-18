@@ -81,7 +81,7 @@
 <h5>CATEGORY: ${product.p_cat.c_name}</h5>
 
 <a class="btn btn-primary" href="${e}addtocart/${product.p_id}"> ADD TO CART</a>
-<a class="btn btn-primary" href=""> Buy Now</a>
+<a class="btn btn-primary" href="${e}buynow/${product.p_id}"> Buy Now</a>
 
 </div>
 </div>

@@ -24,9 +24,10 @@ public class supplierDAOImpl implements supplierDAO{
 	}
 	@Override
 	@Transactional
-	public void deletesupplier(supplier sup) {
+	public boolean deletesupplier(supplier sup) {
 		Session session=factory.getCurrentSession();
 		session.delete(sup);
+		return true;
 	}
 	@Override
 	public supplier getsupplier(int id) {

@@ -33,9 +33,10 @@ public class cartDAOImpl implements cartDAO {
 	}
 
 	@Transactional
-	public void insertOrUpdateCart(cart cart_item) {
+	public boolean insertOrUpdateCart(cart cart_item) {
 		Session session = factory.getCurrentSession();
 		session.saveOrUpdate(cart_item);
+		return true;
 	}
 
 	@Override
@@ -63,8 +64,9 @@ public class cartDAOImpl implements cartDAO {
 		}
 
 	@Transactional
-	public void deleteCartItem(cart cart_item) {
+	public boolean deleteCartItem(cart cart_item) {
 		Session session = factory.getCurrentSession();
 		session.delete(cart_item);	
+		return true;
 	}
 }

@@ -6,8 +6,8 @@ import abc.myProject.model.category;
 
 public interface categoryDAO {
 
-public void saveOrUpdatecategory(category cat);
- public void deletecategory(category cat);
+public boolean saveOrUpdatecategory(category cat);
+ public boolean deletecategory(category cat);
  public category getcategory(int id);
  public List<category> getallcategory();
 }

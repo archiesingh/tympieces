@@ -17,15 +17,17 @@ public class productDAOImpl implements productDAO{
 		this.factory=factory;
 	}
 	@Transactional
-	public void saveOrUpdateproduct(product pro) {
+	public boolean saveOrUpdateproduct(product pro) {
 		Session session=factory.getCurrentSession();
 		session.saveOrUpdate(pro);
+		return true;
 	}
 	@Override
 	@Transactional
-	public void deleteproduct(product pro) {
+	public boolean deleteproduct(product pro) {
 		Session session=factory.getCurrentSession();
 		session.delete(pro);
+		return true;
 	}
 	@Override
 	public product getproduct(int id) {

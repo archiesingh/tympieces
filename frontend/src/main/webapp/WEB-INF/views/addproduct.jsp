@@ -13,7 +13,8 @@
 <body>
 <%@include file="header.jsp" %>
  <div class="form">
-<form:form action="${e}saveproduct" modelAttribute="pro" enctype="multipart/form-data" onsubmit="return validation()">
+
+ <form:form action="${e}saveproduct" modelAttribute="pro" enctype="multipart/form-data" onsubmit="return validation()">
 <form:input placeholder="product name" path="p_name"/>
 <form:input placeholder="product price" path="p_price"/>
 <form:input placeholder="product quantity" path="p_quant"/>

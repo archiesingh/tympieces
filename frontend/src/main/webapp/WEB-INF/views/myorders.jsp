@@ -26,8 +26,20 @@
 <h2>Quantity : ${order_item.qaunt}</h2>
 <h2>Price : ${order_item.pro.p_price*order_item.qaunt}</h2>
 <h2>Payment mode : ${order_item.paymentmode}</h2>
-<h2>Shipping Address </h2><hr> <h3>${order_item.ship_address}</h3>
-<h2>Billing Address </h2><hr><h3> ${order_item.bill_addess}</h3>
+<hr>
+<h2><U>Shipping Address</U></h2>
+<h3>${order_item.ship_address.name}</h3>
+<h3>${order_item.ship_address.mobile}</h3>
+<h3>${order_item.ship_address.houseno}</h3>
+<h3>${order_item.ship_address.city}</h3>
+<h3>${order_item.ship_address.state}</h3>
+<hr>
+<h2><U>Billing Address</U></h2>
+<h3>${order_item.bill_addess.name}</h3>
+<h3>${order_item.bill_addess.mobile}</h3>
+<h3>${order_item.bill_addess.houseno}</h3>
+<h3>${order_item.bill_addess.city}</h3>
+<h3>${order_item.bill_addess.state}</h3>
 </div>
 
 </div><br/>
