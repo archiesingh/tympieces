@@ -23,15 +23,17 @@ public class orderdetailsDAOImpl implements orderdetailsDAO {
 	}
 
 	@Transactional
-	public void insertorderdetails(orderdetails order) {
+	public boolean insertorderdetails(orderdetails order) {
 		Session session=factory.getCurrentSession();
 		session.saveOrUpdate(order);
+		return true;
 	}
 	@Transactional
-	public void insertaddress(shipaddress s_add,billaddress b_add) {
+	public boolean insertaddress(shipaddress s_add,billaddress b_add) {
 		Session session=factory.getCurrentSession();
 		session.saveOrUpdate(s_add);
 		session.save(b_add);
+		return true;
 	}
 	
 	@Override

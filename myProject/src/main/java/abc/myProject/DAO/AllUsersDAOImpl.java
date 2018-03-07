@@ -15,9 +15,10 @@ public class AllUsersDAOImpl implements AllUserDAO {
 		this.factory=factory;
 	}
 	@Transactional
-	public void saveOrUpdateUser(AllUsers allUsers) {
+	public boolean saveOrUpdateUser(AllUsers allUsers) {
 		Session session=factory.getCurrentSession();
 		session.saveOrUpdate(allUsers);
+		return true;
 	}
 	@Override
 	public AllUsers getUserByUsername(String username) {

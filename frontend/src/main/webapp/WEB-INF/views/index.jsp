@@ -160,7 +160,17 @@
         </a>
       </div>
     </div>
-    
+ <div class="col-md-4">
+      <div class="thumbnail">
+       <c:if test='<%=session.getAttribute("loggedIn")!=null%>'>
+        <a href="${e}productlist/10" target="_blank"></c:if>
+          <img src="${e}/resources/images/cchaps.PNG" alt="Lights" style="width:100%">
+          <div class="caption">
+                      </div>
+        </a>
+      </div>
+    </div>
+       
     
   
   

@@ -5,6 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class Pagecontroller {
+	@RequestMapping("/403Error")
+	public String Error() {
+		return "403";
+	}
 	@RequestMapping("/register")
 	public String register() {
 		return "register";

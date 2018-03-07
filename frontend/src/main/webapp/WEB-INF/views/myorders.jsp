@@ -28,18 +28,18 @@
 <h2>Payment mode : ${order_item.paymentmode}</h2>
 <hr>
 <h2><U>Shipping Address</U></h2>
-<h3>${order_item.ship_address.name}</h3>
-<h3>${order_item.ship_address.mobile}</h3>
-<h3>${order_item.ship_address.houseno}</h3>
-<h3>${order_item.ship_address.city}</h3>
-<h3>${order_item.ship_address.state}</h3>
+<h3>NAME: ${order_item.ship_address.name}</h3>
+<h3>MOBILE: ${order_item.ship_address.mobile}</h3>
+<h3>HOUSE NO.: ${order_item.ship_address.houseno}</h3>
+<h3>CITY: ${order_item.ship_address.city}</h3>
+<h3>STATE: ${order_item.ship_address.state}</h3>
 <hr>
 <h2><U>Billing Address</U></h2>
-<h3>${order_item.bill_addess.name}</h3>
-<h3>${order_item.bill_addess.mobile}</h3>
-<h3>${order_item.bill_addess.houseno}</h3>
-<h3>${order_item.bill_addess.city}</h3>
-<h3>${order_item.bill_addess.state}</h3>
+<h3>NAME: ${order_item.bill_addess.name}</h3>
+<h3>MOBILE: ${order_item.bill_addess.mobile}</h3>
+<h3>HOUSE NO.: ${order_item.bill_addess.houseno}</h3>
+<h3>CITY: ${order_item.bill_addess.city}</h3>
+<h3>STATE: ${order_item.bill_addess.state}</h3>
 </div>
 
 </div><br/>

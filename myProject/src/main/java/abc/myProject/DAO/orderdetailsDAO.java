@@ -7,7 +7,7 @@ import abc.myProject.model.orderdetails;
 import abc.myProject.model.shipaddress;
 
 public interface orderdetailsDAO {
-	public void insertorderdetails(orderdetails order);
+	public boolean insertorderdetails(orderdetails order);
 	public List<orderdetails> getallorders(String username);
-	public void insertaddress(shipaddress s_add,billaddress b_add);
+	public boolean insertaddress(shipaddress s_add,billaddress b_add);
 	}
