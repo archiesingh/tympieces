@@ -3,7 +3,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Product Details</title>
+
 
 </head>
 <body>
@@ -11,6 +14,8 @@
 <div class="container">
 
 <div class="col-sm-4">
+<br>
+<br>
  <div class="thumbnail"  >
 <img src="${e}resources/images/${product.p_id}.jpg" height="440" width="240"/>
 </div>
@@ -20,8 +25,11 @@
      
 <h3><b>${product.p_name}</b></h3>
 <hr>
-<h5>IN STOCK: ${product.p_quant}</h5>
-<h5>PRICE: ${product.p_price}</h5>
+<h5><b>IN STOCK</b> : ${product.p_quant}</h5>
+<h5><b>PRICE</b> : <i class="fa fa-rupee" style="font-size:13px"></i> ${product.p_price}</h5>
+<h5><b>SUPPLIER NAME</b> : ${product.p_sup.s_name}</h5>
+<h5><b>CATEGORY</b> : ${product.p_cat.c_name}</h5>
+
 <div id="cashOnDelivery_feature_div" class="feature" data-feature-name="cashOnDelivery">
 
 <script type="a-state" data-a-state="{&quot;key&quot;:&quot;cashOnDeliveryPageState&quot;}">{"isCodRestrictedGl":false}</script>
@@ -77,11 +85,9 @@
 
 
 
-<h5>SUPPLIER NAME: ${product.p_sup.s_name}</h5>
-<h5>CATEGORY: ${product.p_cat.c_name}</h5>
 
 <a class="btn btn-primary" href="${e}addtocart/${product.p_id}"> ADD TO CART</a>
-<a class="btn btn-primary" href="${e}buynow/${product.p_id}"> Buy Now</a>
+<a class="btn btn-primary" href="${e}buynow/${product.p_id}"> BUY NOW </a>
 
 </div>
 </div>

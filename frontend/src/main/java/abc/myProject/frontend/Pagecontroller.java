@@ -13,6 +13,11 @@ public class Pagecontroller {
 	public String register() {
 		return "register";
 	}
+	@RequestMapping("/aboutus")
+	public String aboutus() {
+		return "aboutus";
+	}
+
 
 	@RequestMapping("adminhome")
 	public String adminhome(){

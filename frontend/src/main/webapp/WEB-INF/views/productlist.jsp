@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<%@include file="header.jsp" %>
+
 
 </head>
 <body>
-<%@include file="header.jsp" %>
 <div class="row">
 <div class="container">
 <c:forEach items="${proList}" var="pro">
@@ -17,7 +18,7 @@
       <a href="${e}productdetails/${pro.p_id}" target="_blank">
 <img src="${e}resources/images/${pro.p_id}.jpg"  style="height:200px" alt="buildings" >
 <div class="caption">
-<p>${pro.p_name}</p>
+<p><center><b>${pro.p_name}</b></center></p>
 </div>
 </a>
 </div>

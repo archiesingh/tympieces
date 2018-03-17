@@ -7,7 +7,7 @@ function validationShipping()
 		alert("Please enter the Name");}
 	else if((i[1].value.length==0)||(i[1].value.length!=10))
 	{	result=false;
-		alert("Please enter the Mobile Number");
+		alert("Please enter the Mobile Number 1");
 	}
 	else if(i[2].value.length==0)
 	{	result=false;
@@ -29,7 +29,7 @@ function validationShipping()
 	{	result=false;
 			alert("Please enter the Name");
 	}
-	else if((i[7].value.length==0)||(i[3].value.length<=9))
+	else if((i[7].value.length==0)||(i[7].value.length!=10))
 	{		result=false;
 			alert("Please enter the Mobile Number");
 	}

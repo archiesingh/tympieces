@@ -1,26 +1,25 @@
-function validationShipping()
+function validationRegister()
 {
 	var result=true;
 	var i=document.getElementsByTagName("input");
-	if(i[0].value.length==0)
-	result=false;
-	if(!result)
+	if(i[0].value.length==0){
 		alert("Please enter the UserName");
-	else if(i[1].value.length==0)
-		result=false;
-	if(!result)
+	return false;
+	}
+		else if(i[1].value.length==0){
 		alert("Please enter the Name");
-	else if(i[2].value.length==0)
-		result=false;
-	if(!result)
+	return false;
+		}
+		else if(i[2].value.length==0){
 		alert("Please enter the Email Address");
-	else if((i[3].value.length==0)||(i[3].value.length<=9))
-		result=false;
-	if(!result)
+	return false;
+		}
+		else if((i[3].value.length==0)||(i[3].value.length<=9)){
+		
 		alert("Please Mobile Number");
-	else if(i[4].value.length==0)
-		result=false;
-	if(!result)
+		}
+		else if(i[4].value.length==0){
 		alert("Please select your  Password");
-		return(result);
+		}
+	return 	true;
 }

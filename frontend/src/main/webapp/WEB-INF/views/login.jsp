@@ -5,10 +5,15 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="${e}resources/javaScript/validationLogin.js"></script>
+<script src ="${e}resources/javaScript/validationLogin.js"></script>
 <%@include file="header.jsp" %>
-<div class="login-page">
-  <div class="form">
+<style>
+body  {
+    background-image: url("resources/images/wallpaper.jpg");
+}
+</style>
+<div class="login-page" >
+  <div class="form" >
     <form class="login-form" action="${e}perform_login" method="post" onsubmit="return validationLogin()">
       <input type="text" placeholder="username" name="username"/>
       <input type="password" placeholder="password" name="password"/>
