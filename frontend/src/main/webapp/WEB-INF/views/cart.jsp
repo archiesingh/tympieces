@@ -7,12 +7,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Cart</title>
+<style>
+body  {
+    background-image: url("resources/images/waterr.jpeg");
+ 	background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+</style>
 </head>
 <body>
 <%@include file="header.jsp" %>
+<h1 style=" color:black; font-size:500%; text-align:center; font-family:algerian;"><u>CART</u></h1>
+
 <div class="row">
 <c:forEach items="${cartlist}" var="cart_item">
-<div class="container" style="box-shadow: 5px 2px 5px 5px grey">
+<hr>
+<div class="container">
 
 <br>
 <div class="col-sm-4">
@@ -21,7 +32,7 @@
 <img src="${e}resources/images/${cart_item.pro.p_id}.jpg" alt="buildings"  style="height:400px">
 </div>
 </div>
-<div class="col-sm-8" >
+<div class="col-sm-6" >
 <h2><u><b>${cart_item.pro.p_name}</u></b></h2>
 <hr>
 <h3><b>PRICE</b>: <i class="fa fa-rupee" style="font-size:24px"></i>

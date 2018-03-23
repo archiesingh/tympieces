@@ -6,8 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>BILLING & SHIPPING</title>
 
+
 <script src="${e}resources/javaScript/validationShipping.js"></script>
 <link href="${e}resources/css/try.css" rel="stylesheet">
+<style>
+body  {
+    background-image: url("resources/images/wallpaper.jpg");
+	background-attachment: fixed;
+}
+</style>
 </head>
 <body>
 <%@include file="header.jsp" %>

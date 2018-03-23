@@ -25,13 +25,8 @@
 </head>
 <body>
 
-<header>
-
-
-</header>
-
 <!-- The content of the page would go here. -->
-
+<br><br>
 <footer class="footer-distributed">
 
 <div class="footer-left">

@@ -8,12 +8,24 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>My Orders</title>
+<style>
+body  {
+    background-image: url("resources/images/waterr.jpeg");
+ 	background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+</style>
 </head>
 <body>
 <%@include file="header.jsp" %>
+<h1 style=" color:black; font-size:500%; text-align:center; font-family:algerian;"><u>MY ORDERS</u></h1>
+
 <div class="row">
+
 <c:forEach items="${orderlist}" var="order_item">
-<div class="container" style="box-shadow: 5px 2px 5px 5px grey">
+<hr>
+<div class="container"  >
 <div class="col-sm-4">
 <br>
 <br>
@@ -24,7 +36,7 @@
 <img src="${e}resources/images/${order_item.pro.p_id}.jpg" alt="product"  style="height:400px">
 </div>
 </div>
-<div class="col-sm-8" >
+<div class="col-sm-6" >
 <h2><b><u>${order_item.pro.p_name}</u></b></h2>
 <hr>
 <h4><b>QUANTITY</b> : ${order_item.qaunt}</h4>

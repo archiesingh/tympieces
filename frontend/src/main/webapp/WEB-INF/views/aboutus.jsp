@@ -5,6 +5,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>About Us</title>
+<style>
+body  {
+    background-image: url("resources/images/waterr.jpeg");
+ 	background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+</style>
 </head>
 <body>
 <%@include file="header.jsp" %>
@@ -26,5 +34,6 @@
 	<p>Tympieces.com is the fourth largest watch retailer Delhi. Over 1 million watch enthusiasts visit Tympieces.com each month. In addition, Tympieces.com ranks higher than many other popular online retailers, in customer rating reviews. This can be attributed to our world-class customer service and repair operations which are both in-house. Tympieces.com is also an international e-commerce site .</p>
 
 </div>
+<%@include file="footer.jsp" %>
 </body>
 </html>

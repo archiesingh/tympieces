@@ -7,6 +7,16 @@
 <%@include file="header.jsp" %>
 
 
+<style>
+body  {
+    background-image: url("resources/images/waterr.jpeg");
+ 	background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+</style>
+
+
 </head>
 <body>
 <div class="row">

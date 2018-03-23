@@ -48,14 +48,5 @@ public class TestSupplierDAO{
 		
 	}
 
-	@Test
-	public void testGetsupplier() {
-		fail("Not yet implemented");
-		
-	}
 
-	@Test
-	public void testGetallsupplier() {
-		fail("Not yet implemented");
-	}
 }
